@@ -15,11 +15,11 @@ const Header = props => {
                     </div>
                     <div className='collapse navbar-collapse' id='myNavbar'>
                         <ul className='nav navbar-nav navbar-right'>
-                            <li><a href='/'>ABOUT</a></li>
-                            <li><a href='/services'>SERVICES</a></li>
+                            <li><a href='/'>SOBRE</a></li>
+                            <li><a href='/services'>SERVIÇOS</a></li>
                             <li><a href='/portfolio'>PORTFOLIO</a></li>
-                            <li><a href='/pricing'>PRICING</a></li>
-                            <li><a href='/contact'>CONTACT</a></li>
+                            <li><a href='/pricing'>PREÇOS</a></li>
+                            <li><a href='/contact'>CONTATO</a></li>
                         </ul>
                     </div>
                 </div>
