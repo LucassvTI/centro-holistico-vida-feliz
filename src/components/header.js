@@ -26,8 +26,9 @@ const Header = props => {
             </nav>
 
             <div className='jumbotron text-center'>
-                <h1>Company</h1>
-                <p>We specialize in blablabla</p>
+                <h1>Centro Holistico Vida Feliz</h1>
+                <h2>Medicina Alternativa</h2>
+                <p>É hoje o tratamento de saúde que mais cresce no mundo.</p>
                 <form>
                     <div className='input-group'>
                         <input type='email' className='form-control' size='50' placeholder='Email Address' required />
