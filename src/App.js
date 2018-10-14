@@ -1,29 +1,30 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route} from 'react-router-dom'
 
-import Header from './components/header'
-import Footer from './components/footer'
-import About from './components/about'
-import Services from './components/services'
-import Portfolio from './components/portfolio'
-import Pricing from './components/pricing'
-import Contact from './components/contact'
+import Navbar from './components/navbar/navbar'
+import Footer from './components/footer/footer'
+import Home from './components/pages/home'
+import Sobre from './components/pages/sobre'
+import Profissional from './components/pages/profissional'
+import Tecnicas from './components/pages/tecnicas'
+import Contato from './components/pages/contato'
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div className="App">
-          <Header />
-            <Route path='/' exact component={About} />
-            <Route path='/services' component={Services} />
-            <Route path='/portfolio' component={Portfolio} />
-            <Route path='/pricing' component={Pricing} />
-            <Route path='/contact' component={Contact} />
+      <BrowserRouter> 
+        <div >
+          <Navbar />
+          <Route exact path="/" component={Home} />
+          <Route path="/sobre" component={Sobre}/>
+          <Route path="/profissional" component={Profissional}/>
+          <Route path="/tecnicas" component={Tecnicas}/>
+          <Route path="/contato" component={Contato}/>
           <Footer />
         </div>
       </BrowserRouter>
-    );
+     
+    )
   }
 }
 
