@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import './home.css'
-import Video from './../video'
-
 
 class Home extends Component {
     render() {
@@ -37,7 +34,7 @@ class Home extends Component {
                     </div>
                         <div className="container">
                             <div className="embed-responsive embed-responsive-21by9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/0QTUMAPjMP8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/0QTUMAPjMP8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title='Video de apresentação vindo do Youtube'></iframe>
                             </div>
                         </div>
                 </section>

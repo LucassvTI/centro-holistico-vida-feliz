@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import './footer.css'
-
 
 class Footer extends Component {
     voltarTopo(e) {
@@ -14,7 +12,7 @@ class Footer extends Component {
                 <div className='container'>
                     <div className="row p-2">
                         <div className="col-md-6 imagem-footer">
-                            <img className="img-thumbnail" src={require('../../imagens/leandro.jpg')} />
+                            <img className="img-thumbnail" src={require('../../imagens/leandro.jpg')} alt='Leandro Viegas' />
                         </div>
                         <div className="col-md-6 conteudo-footer">
                             <div className='col-12'>
