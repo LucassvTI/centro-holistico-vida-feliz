@@ -5,29 +5,6 @@ class Home extends Component {
         return (
             <main>
                 <section>
-                    <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <img className="d-block w-100" src="http://placehold.it/1350x280&text=image1" alt="First slide" />
-                            </div>
-                            <div className="carousel-item">
-                                <img className="d-block w-100" src="http://placehold.it/1350x280&text=image2" alt="Second slide" />
-                            </div>
-                            <div className="carousel-item">
-                                <img className="d-block w-100" src="http://placehold.it/1350x280&text=image3" alt="Third slide" />
-                            </div>
-                        </div>
-                        <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="sr-only">Previous</span>
-                        </a>
-                        <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="sr-only">Next</span>
-                        </a>
-                    </div>
-                </section>
-                <section>
                     <div className="titulo">
                         <h1 className='display-6 text-center'>Medicina Alternativa</h1>
                         <h2 className='display-7 text-center'>É hoje o tratamento de saúde que mais cresce no mundo</h2>
