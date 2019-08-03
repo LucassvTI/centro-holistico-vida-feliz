@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import Logo from '../../assets/logocombranco.png'
 
 class Navbar extends Component {
     render() {
         return (
             <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>    
-                <a className='navbar-brand logo-img' href=' '><img src={require('../../imagens/logocombranco.png')} alt='Logo Centro Holistico Vida Feliz' /></a>
+                <a className='navbar-brand logo-img' href=' '><img src={Logo} alt='Logo Centro Holistico Vida Feliz' /></a>
                 <a className='navbar-brand logo-texto' href=' '>Centro Holistico Vida Feliz<br/><span>Psicoterapia Holistica</span></a>
                 <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
                     <span className='navbar-toggler-icon'></span>

@@ -1,23 +1,19 @@
 import React, { Component } from 'react'
+import Leandro from '../../assets/leandro.jpg';
 
 class Footer extends Component {
-    voltarTopo(e) {
-        e.preventDefault();
-        window.scrollTo(0, 0)
-    }
-
     render() {
         return (
             <footer className='container-fluid p-0 footer'>
                 <div className='container'>
                     <div className="row p-2">
                         <div className="col-md-6 imagem-footer">
-                            <img className="img-thumbnail" src={require('../../imagens/leandro.jpg')} alt='Leandro Viegas' />
+                            <img className="img-thumbnail" src={Leandro} alt='Leandro Viegas' />
                         </div>
                         <div className="col-md-6 conteudo-footer">
                             <div className='col-12'>
                             <address>
-                            Avenida Assis Brasil, N°3.257 3° andar, Sala 306, Passo d'Areia<br />Porto Alegre - RS, 91010-004
+                            Avenida Assis Brasil, N°3.257 3° andar, Sala 306, Passo d'Areia Porto Alegre - RS, 91010-004
                             </address>
                                
                             </div>
