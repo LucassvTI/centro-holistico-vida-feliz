@@ -1,37 +1,25 @@
-import React, { Component } from 'react'
-import Logo from '../../assets/logocombranco.png'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Nav, Navbar } from 'react-bootstrap';
 
-class Navbar extends Component {
-    render() {
-        return (
-            <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>    
-                <a className='navbar-brand logo-img' href=' '><img src={Logo} alt='Logo Centro Holistico Vida Feliz' /></a>
-                <a className='navbar-brand logo-texto' href=' '>Centro Holistico Vida Feliz<br/><span>Psicoterapia Holistica</span></a>
-                <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
-                    <span className='navbar-toggler-icon'></span>
-                </button>
-                <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-                    <ul className='navbar-nav p-2 ml-auto'>
-                        <li className='nav-item pl-2'>
-                            <a className='nav-link' href='/'>Home</a>
-                        </li>
-                        <li className='nav-item pl-2'>
-                            <a className='nav-link' href='/sobre'>Sobre</a>
-                        </li>
-                        <li className='nav-item pl-2'>
-                            <a className='nav-link' href='/profissional'>Profissional</a>
-                        </li>
-                        <li className='nav-item pl-2'>
-                            <a className='nav-link' href='/tecnicas'>Técnicas</a>
-                        </li>
-                        <li className='nav-item pl-2'>
-                            <a className='nav-link' href='/contato'>Contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        )
-    }
-}
+import { Content } from './styles';
 
-export default Navbar
+const NavigationBar = () => (
+    <Content>
+        <Navbar expand="lg" fixed="top">
+            <Navbar.Brand><Link to="/">Centro Holistico Vida Feliz</Link></Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="ml-auto">
+                    <Nav.Item><Link to="/">Home</Link></Nav.Item>
+                    <Nav.Item><Link to="/sobre"> Sobre </Link></Nav.Item>
+                    <Nav.Item><Link to="/profissional"> Profissional </Link></Nav.Item>
+                    <Nav.Item><Link to="/tecnicas"> Técnicas </Link></Nav.Item>
+                    <Nav.Item><Link to="/contato"> Contato </Link></Nav.Item>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+    </Content>
+);
+
+export default NavigationBar;
