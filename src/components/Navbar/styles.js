@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 export const Content = styled.nav`
+  height: 63px;
   .navbar{
-    height: 60px;
     background-color: #b1ca84;
     text-align: right;
     box-shadow: 0px 0px 6px;
-    padding: 0.5rem 0;
+    padding: 0;
     .navbar-brand{
+      padding: 0;
       a{
         font-size: 1.6rem;
         text-decoration:none;
@@ -15,17 +16,17 @@ export const Content = styled.nav`
         :hover{
           color: #FFF;
         }
+        @media (max-width: 992px){
+          font-size: 1.4rem;
+        }
       }
     }
     button{
-      margin-right: 1rem;
+      margin: 0.5rem 1rem;
       background-color: #b1ca84;
       :focus{
         outline: none;
       }
-    }
-    > span{
-      margin-left: 1rem;
     }
     @media (max-width: 992px){
       .navbar-collapse{
@@ -35,11 +36,16 @@ export const Content = styled.nav`
   }
   .nav-item{
     a{
+      :active,
+      :hover{
+        color: #FFF !important;
+      }
+    }
+    .nav-link{
       display: block;
-      padding: 0.5rem 0rem;
-      color: #FFF;
+      padding: 0.5rem 1rem;
       font-size: 1.3rem;
-      z-index: 999;
+      
       @media (min-width: 992px){
         padding-right: 0.5rem;
         padding-left: 0.5rem;
@@ -47,6 +53,8 @@ export const Content = styled.nav`
     }
   }
   .navbar-nav{
-    padding: 0.5rem 1rem;
+    @media (min-width: 992px){
+      padding: 0.5rem 1rem;
+    }
   }
 `;

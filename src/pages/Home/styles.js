@@ -2,13 +2,9 @@ import styled from 'styled-components';
 
 export const Main = styled.div`
   min-height: calc(100vh - 288px);
-  padding-top: 60px;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
   background-color: var(--branco-fundo);
-  header{
-    padding: 20px 0;
-    text-align: center;
-    
-  }
   .row{
     div{
       margin: 15px 0;

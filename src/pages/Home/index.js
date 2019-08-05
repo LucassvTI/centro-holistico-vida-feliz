@@ -6,15 +6,14 @@ import { Main } from './styles';
 
 const Home = () => (
     <Main>
+        <Container>
         <header>
             <h1>Medicina Alternativa</h1>
             <h2>É hoje o tratamento de saúde que mais cresce no mundo</h2>
         </header>
-        <Container>
-            <Carousel/>
-        </Container>
+        <Carousel/>
         <section>
-            <Container>
+            
                 <Row>
                     <Col xs={12} md={6}>
                         <Card>
@@ -53,8 +52,8 @@ const Home = () => (
                         </Card>
                     </Col>
                 </Row>
-            </Container>
         </section>
+        </Container>
     </Main>
 );
 
