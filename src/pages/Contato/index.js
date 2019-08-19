@@ -18,10 +18,11 @@ function Contato() {
         const data = {
             remetente: "Centro Holistico Vida Feliz <chvidafeliz@gmail.com>",
             assunto,
-            destinatarios,     //: destinatarios.concat(",leandrotviegas@gmail.com"),
+            destinatarios: destinatarios.concat(",leandrotviegas@gmail.com"),
             corpo,
             token: process.env.EMAIL_TOKEN
         }
+        console.log(process.env.EMAIL_TOKEN);
         const envio = await sendEmail(data);
         setLoading(false);
         setMessage( envio.data.message );
