@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Content = styled.nav`
+export const Content = styled.div`
   height: 63px;
   .navbar{
     background-color: #b1ca84;

@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
   :root{
     --verde-escuro: #719437;
     --verde-claro: #b1ca84;
-    --branco-fundo: #f5f5f5;
+    --branco-fundo: #f4f4e8 /*#f5f5f5*/;
     --dark-green: #2F4F4F;
     --dark-olive: #556B2F;
   }

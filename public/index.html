@@ -20,13 +20,6 @@
     <script defer src="/__/firebase/5.5.4/firebase-storage.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
-  </head>
-
-  <body>
-    <noscript>
-      Este site não funciona sem JavaScript seja legal e habilite :)
-    </noscript>
-    <div id="root"></div>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         try {
@@ -34,10 +27,17 @@
           let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
           document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
         } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+          // console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the cd, check the console.';
         }
       });
     </script>
+  </head>
+
+  <body>
+    <noscript>
+      Este site não funciona sem JavaScript seja legal e habilite :)
+    </noscript>
+    <div id="root"></div>
   </body>
 </html>

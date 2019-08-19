@@ -17,7 +17,6 @@ export const Content = styled.main`
         background: transparent;
         outline: none;
       }
-      
     }
     .card-body{
         text-indent: 1rem;

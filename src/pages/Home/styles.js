@@ -13,6 +13,11 @@ export const Main = styled.div`
   .card{
     border: none;
     box-shadow: 0px 5px 10px -5px;
+    .card-body{
+      flex: 1 1 320px;
+      margin: 0;
+      padding-top: 0;
+    }
   }
   .card-title{
     color: var(--verde-claro);

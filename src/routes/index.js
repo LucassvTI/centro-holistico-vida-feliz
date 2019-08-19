@@ -13,7 +13,7 @@ import NotFound from '../pages/NotFound'
 const Routes = () => (
   <Switch>
     <Route exact path="/" component={Home} />
-    <Route path="/sobre" component={Sobre}/>
+    <Route path="/atividades" component={Sobre}/>
     <Route path="/profissional" component={Profissional}/>
     <Route path="/tecnicas" component={Tecnicas}/>
     <Route path="/contato" component={Contato}/>
