@@ -19,23 +19,20 @@ function Contato() {
             remetente: "Centro Holistico Vida Feliz <chvidafeliz@gmail.com>",
             assunto,
             destinatarios: destinatarios.concat(",leandrotviegas@gmail.com"),
-            corpo,
-            token: process.env.EMAIL_TOKEN
+            corpo
         }
-        console.log(process.env.EMAIL_TOKEN);
         const envio = await sendEmail(data);
         setLoading(false);
         setMessage( envio.data.message );
         document.getElementById("contact").reset();
     }
 
-    async function sendEmail({ remetente, assunto, destinatarios, corpo, token }){
+    async function sendEmail({ remetente, assunto, destinatarios, corpo }){
         return await email.post('/enviarEmail', {
             remetente,
             assunto,
             destinatarios,
-            corpo,
-            token
+            corpo
         });
     }
 
