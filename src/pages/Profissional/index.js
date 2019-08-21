@@ -1,9 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Container } from 'react-bootstrap';
 import { Content } from './styles';
 
 const Profissional = () => (
     <Content>
+        <Helmet>
+            <title>Profissional - Centro Holístico Vida Feliz</title>
+            <meta name="description" content="O autor do Ebook SUA EXCELENCIA O PERDÃO, onde ensina de maneira prática como perdoar e elevar a autoestima, conta como decidiu trabalhar na terapia alternativa." />
+        </Helmet>
         <Container>
         <h1>Leandro Viegas</h1>
         <section>

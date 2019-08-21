@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet';
 import { FaMapMarker, FaEnvelope, FaPhone } from 'react-icons/fa';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Form, Input } from '@rocketseat/unform';
@@ -16,9 +17,8 @@ function Contato() {
         document.getElementById("Btn").disabled = true;
         setLoading(true);
         const data = {
-            remetente: "Centro Holistico Vida Feliz <chvidafeliz@gmail.com>",
             assunto,
-            destinatarios: destinatarios.concat(",leandrotviegas@gmail.com"),
+            destinatarios,
             corpo
         }
         const envio = await sendEmail(data);
@@ -27,9 +27,8 @@ function Contato() {
         document.getElementById("contact").reset();
     }
 
-    async function sendEmail({ remetente, assunto, destinatarios, corpo }){
+    async function sendEmail({ assunto, destinatarios, corpo }){
         return await email.post('/enviarEmail', {
-            remetente,
             assunto,
             destinatarios,
             corpo
@@ -38,6 +37,10 @@ function Contato() {
 
     return (
         <Content>
+            <Helmet>
+            <title>Contato - Centro Holístico Vida Feliz</title>
+            <meta name="description" content="Faça contato conosco e conheça um pouco mais sobre o nosso trabalho, você não vai se arrepender" />
+        </Helmet>
             <Container>
             <h1>Entre em Contato</h1>
             <Row>

@@ -1,9 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Container } from 'react-bootstrap';
 import { Content } from './styles';
 
 const Tecnicas = () => (
     <Content>
+        <Helmet>
+            <title>Atividades - Centro Holístico Vida Feliz</title>
+            <meta name="description" content="Conheça um pouquinho das técnicas usadas no Centro Holístico Vida Feliz como ferramenta para facilitar e deixar os clientes satisfeitos." />
+        </Helmet>
         <Container>
             <h1>Técnicas Terapeuticas</h1>
             <h3> Programação Neurolinguística – PNL</h3>

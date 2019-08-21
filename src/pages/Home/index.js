@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 
 import Carousel from '../../components/Carousel';
@@ -6,6 +7,10 @@ import { Main } from './styles';
 
 const Home = () => (
     <Main>
+        <Helmet>
+            <title>Home - Centro Holístico Vida Feliz</title>
+            <meta name="description" content="A medicina alternativa, com suas técnicas especificas, trabalha com estado alterado da consciência, possibilitando soluções breves para os desconfortos de seus clientes." />
+        </Helmet>
         <Container>
         <header>
             <h1>Medicina Alternativa</h1>

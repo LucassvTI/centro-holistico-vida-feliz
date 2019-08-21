@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Container, Accordion, Card } from 'react-bootstrap';
 import { Content } from './styles';
 
@@ -8,6 +9,10 @@ function Sobre () {
     
     return (
     <Content>
+        <Helmet>
+            <title>Atividades - Centro Holístico Vida Feliz</title>
+            <meta name="description" content="Com sessões individuais ou com pacotes de 5 ou 10 sessões com duração aproximada de 60 a 90 minutos cada, pode ser solucionado desconfortos definitivamente." />
+        </Helmet>
         <Container>
         <section>
             <h1>Atividades</h1>
