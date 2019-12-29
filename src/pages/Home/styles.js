@@ -17,6 +17,9 @@ export const Main = styled.div`
       flex: 1 1 320px;
       margin: 0;
       padding-top: 0;
+      @media (max-width: 767px) {
+        flex: 1 1 auto;
+      }
     }
   }
   .card-title{

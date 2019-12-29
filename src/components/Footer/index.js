@@ -28,7 +28,7 @@ const Footer = () => (
                 <Col xs={12} md={2}>
                 <strong>Contato</strong>
                 <div>
-                    <a href="https://api.whatsapp.com/send?phone=51991085040" target="_blank"  rel="noopener noreferrer"><FaWhatsapp /></a>
+                    <a href="https://api.whatsapp.com/send?phone=5551991085040" target="_blank"  rel="noopener noreferrer"><FaWhatsapp /></a>
                     <a href='tel:51991085040'><FaMobileAlt /> </a>
                     <a href='tel:5139070450'><FaPhone /></a>
                 </div>
