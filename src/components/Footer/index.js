@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaWhatsapp, FaPhone } from 'react-icons/fa';
+import { FaWhatsapp, FaPhone, FaMobileAlt } from 'react-icons/fa';
 import { Container, Row, Col } from 'react-bootstrap';
 import Leandro from '../../assets/leandro.jpg';
 
@@ -27,10 +27,11 @@ const Footer = () => (
                 </Col>      
                 <Col xs={12} md={2}>
                 <strong>Contato</strong>
-                <p>
-                    <a href='tel:51991085040'><FaWhatsapp /> (51) 99108-5040</a><br/>
-                    <a href='tel:5139070450'><FaPhone /> (51) 3907-0450</a>
-                </p>
+                <div>
+                    <a href="https://api.whatsapp.com/send?phone=51991085040" target="_blank"  rel="noopener noreferrer"><FaWhatsapp /></a>
+                    <a href='tel:51991085040'><FaMobileAlt /> </a>
+                    <a href='tel:5139070450'><FaPhone /></a>
+                </div>
                 </Col>
             </Row>
         </Container>

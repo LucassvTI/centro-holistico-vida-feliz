@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 
-import Carousel from '../../components/Carousel';
+// import Carousel from '../../components/Carousel';
 import { Main } from './styles';
 
 const Home = () => (
@@ -16,7 +16,7 @@ const Home = () => (
             <h1>Medicina Alternativa</h1>
             <h2>É hoje o tratamento de saúde que mais cresce no mundo</h2>
         </header>
-        <Carousel/>
+        {/* <Carousel/> */}
         <section>
             
                 <Row>

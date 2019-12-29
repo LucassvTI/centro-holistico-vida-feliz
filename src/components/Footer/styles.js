@@ -20,22 +20,28 @@ export const Content = styled.footer`
         justify-content: center;
       }
     }
-    div:last-child{
+    > div:last-child{
       border-left: 2px solid black;
     }
     div{
       strong{
         font-size: 1.2rem;
       }
-      p{
-        text-align: left;
+      div{
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 768px) {
+          flex-direction: row;
+          justify-content: space-evenly;
+          padding: 10px;
+        }
         a{
           text-decoration: none;
-          font-size: 1.1rem;
+          font-size: 2rem;
           color: var(--dark-green);
           :hover{
             color: var(--dark-olive);
-          }    
+          }
         }
       }
       address{
